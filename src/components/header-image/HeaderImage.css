@@ -1,0 +1,26 @@
+.HeaderImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 20vh;
+}
+
+.izquierda {
+  flex: 1;
+  background-color: brown;
+}
+
+.derecha {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  width: 50%;
+  height: 100%;
+}
