@@ -21,6 +21,7 @@ Welcome to my first React project! This is the first of three installments. In i
 This is a school project of the 1st course of multiplatform application development. The objective of this first delivery is the layout, that is to say, to start a project with React and create components to later assemble a web page that in this case is based on a website of modern houses.
 In this example page you can see how is the "skeleton" of the project and in essence how React works. Although we see different pages with similar content, all of them are created from components that can be reused!
 Another great advantage of React is to use third party components, in this project you can see a Leaflet map and icons from Font Awesome. 
+
 ### Built With
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * React
@@ -31,7 +32,6 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 - Eduardo López Hernández
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 X: https://twitter.com/LhEdu
 
 <!-- ACKNOWLEDGMENTS -->
