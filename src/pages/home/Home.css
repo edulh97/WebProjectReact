@@ -1,0 +1,12 @@
+.house-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.house-gallery>* {
+  flex: 0 0 30vw;
+}

@@ -1,0 +1,28 @@
+.Founder-image{
+    display: flex;
+    width: 90vw;
+    height: 333px;
+    object-fit: fill;
+    object-position: center;
+    border-radius: 1%;
+}
+
+.Founder-image-container{
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(221, 221, 221, 1) 50%);
+    justify-content: center;
+}
+
+.founder-container h1{
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.founder-container h2{
+    text-align: center;
+    font-weight: 400;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
