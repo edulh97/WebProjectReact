@@ -1,3 +1,4 @@
+import Consult from "../../components/consult/Consult";
 import Footer from "../../components/footer/Footer";
 import HeaderImage from "../../components/header-image/HeaderImage";
 import Header from "../../components/header/Header";
@@ -9,11 +10,7 @@ function Services() {
   return (
     <>
       <Header />
-      <p>Services page</p>
-      <HeaderImage />
-      <Message />
-      <TextInput/>
-      <PopupMessage/>
+      <Consult/>
       <Footer />
     </>
   );

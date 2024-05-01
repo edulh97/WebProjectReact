@@ -3,8 +3,27 @@ import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYoutube, faTwitter, faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
+import { MapContainer, TileLayer, Marker } from 'react-leaflet';
+import { Icon } from 'leaflet';
+import markerIcon from "../../images/marker-icon.png";
+
 
 function Footer() {
+
+  const markers = [
+    {
+      geocode: [28.1235, -15.4362]
+    },
+    {
+      geocode: [27.997884, -15.416439]
+    },
+  ];
+
+  const customIcon = new Icon({
+    iconUrl: markerIcon,
+    iconSize: [38, 38]
+  });
+
   return (
     <>
       <div className="footer-container">
@@ -22,6 +41,19 @@ function Footer() {
             <FontAwesomeIcon icon={faGithub} className="footer-icons" />
           </a>
           <p> 𒌐 2024 TecnoCan. Todos los derechos reservados <a href="https://shoprenderview.aliexpress.com/credential/showcredential.htm?storeNum=5379102&spm=a2g0o.store_pc_promotion.pcShopHead_442856424.0">Política de Privacidad y Cookies</a> |  <a href="https://shoprenderview.aliexpress.com/credential/showcredential.htm?storeNum=5379102&spm=a2g0o.store_pc_promotion.pcShopHead_442856424.0">Condiciones de Venta</a></p>
+        </div>
+        <div className='footer-map-container'>
+          <p className="visit-us-message">Visit us:</p>
+          <MapContainer center={[27.9944, -15.4192]} zoom={13} scrollWheelZoom={false} style={{ height: '200px', width: '300px' }}>
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+
+            {markers.map(marker => (
+              <Marker key={marker.geocode.toString()} position={marker.geocode} icon={customIcon} />
+            ))}
+          </MapContainer>
         </div>
         <div className="footer-container-derecha">
           <ul className="footer-menu">
