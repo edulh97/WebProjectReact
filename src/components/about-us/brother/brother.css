@@ -1,0 +1,19 @@
+.brother-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+  }
+  
+  .brother-images {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    text-align: center; 
+  }
+  
+  .brother-image {
+    max-width: 90%;
+    margin-bottom: 10px; 
+  }
+  

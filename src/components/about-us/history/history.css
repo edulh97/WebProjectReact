@@ -1,0 +1,48 @@
+.history-container h1 {
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.history-container h2 {
+    text-align: center;
+    font-weight: 400;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.history-image-container p {
+    text-align: center;
+    width: 70vw;
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.history-container {
+    position: relative;
+    overflow: hidden; /* Oculta el contenido que se revele */
+  }
+  
+  .history-container > div {
+    opacity: 0; /* Inicialmente, oculta el contenido */
+    transform: translateY(30px); /* Mueve el contenido hacia abajo */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Transiciones suaves */
+  }
+  
+  .history-container > div.reveal {
+    opacity: 1; /* Muestra el contenido */
+    transform: translateY(0); /* Mueve el contenido de vuelta a su posición original */
+  }
+  
+  .history-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .history-image {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
