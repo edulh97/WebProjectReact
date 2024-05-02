@@ -1,4 +1,3 @@
-// TextInput.jsx
 import React, { useState } from 'react';
 
 function TextInput({ onInputChange }) {
@@ -7,7 +6,7 @@ function TextInput({ onInputChange }) {
   const handleChange = (event) => {
     const value = event.target.value;
     setInputValue(value);
-    onInputChange(value); 
+    onInputChange(value);
   };
 
   return (

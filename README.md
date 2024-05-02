@@ -1,5 +1,12 @@
 # React-Project1
-Welcome to my first React project! This is the first of three installments. In it you will see the different stages of the development of a web page!
+In this second release we have implemented improvements such as: responsive side menu, and connect to a firebase database that allows us to obtain data.In addition, the appearance and response have been improved. 
+
+The firebase implementation can be viewed on the Consult and Contact pages. 
+On the Consult page you can see that it returns data according to the selected region and on the Contact page you can see the price by typing the name of the house.
+
+We are also working on the use of GitHub, creation and modification of branches!
+
+I have to say, my project is based on another one I saw here: https://www.figma.com/community/file/891374608655348853/website-of-architects-free-website
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -24,9 +31,11 @@ Another great advantage of React is to use third party components, in this proje
 
 ### Built With
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+* Visual Studio Code
 * React
 * CSS
 * JavaScript
+
 <!-- CONTACT -->
 ## Contact
 
@@ -40,9 +49,8 @@ Use this space to list resources you find helpful and would like to give credit 
 * My partner and great friend, Cristian.
 * My teacher, Tiburcio Cruz Ravelo.
 * Leaflet.
-* Font Awesome
+* Font Awesome.
 * Online discloser, Miguel Ángel Durán (midudev)
-* This example page found in Figmahttps://www.figma.com/community/file/891374608655348853/website-of-architects-free-website
 * tutorials that have helped me :
   - https://www.youtube.com/watch?v=7iobxzd_2wY&list=PLUofhDIg_38q4D0xNWp7FEHOTcZhjWJ29
   - https://www.youtube.com/watch?v=pFyAu4R684s

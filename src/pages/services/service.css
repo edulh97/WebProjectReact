@@ -1,0 +1,18 @@
+.consult-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+.consult-prefooter{
+    width: 100vw;
+    object-fit: contain;
+}
+.consult-footer{
+    width: 100vw;
+}
+
+  

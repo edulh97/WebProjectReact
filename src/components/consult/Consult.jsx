@@ -24,7 +24,7 @@ function Consult() {
   }
 
   useEffect(() => {
-    getAllHouses(); // Llama a getAllHouses() después de que selectedOption se actualice
+    getAllHouses();
   }, [selectedOption]);
 
   const handleSelectChange = (event) => {

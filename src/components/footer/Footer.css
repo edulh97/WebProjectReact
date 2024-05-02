@@ -1,32 +1,42 @@
-/* Estilo base para el footer */
 .footer-container {
+  overflow-x: hidden;
+  width: 100vw;
+  flex-wrap: wrap;
+  align-items: center;
+
   display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  align-items: flex-start;
-  background-color: #b95858;
+  justify-content: space-around;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(221, 221, 221, 1) 50%);
 }
 
-/* Estilo para los íconos de redes sociales */
 .footer-icons {
-  font-size: 24px;
-  margin-right: 10px;
+  font-size: 40px;
+  padding-right: 50px;
 }
 
-/* Estilo para los enlaces de privacidad y condiciones */
-.footer-container p {
-  font-size: 14px;
-  margin-top: 10px;
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-/* Media query para pantallas pequeñas (máximo 768px) */
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-  }
 
-  /* Ajusta el tamaño del mapa */
-  .leaflet-container {
-    height: 200px;
-    width: 100%; /* Ocupa todo el ancho disponible */
-  }
+.footer-container-izquierda {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.footer-container-derecha {
+  flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }

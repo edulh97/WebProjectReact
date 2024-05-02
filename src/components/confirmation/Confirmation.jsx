@@ -52,7 +52,7 @@ function Confirmation() {
                             <p>
                                 Remember that this house is located in <strong>{h.city}, {h.country}</strong>.
                                 <br />
-                                The inicital price is <strong>{h.price} €</strong>  
+                                The initial price is <strong>{h.price} €</strong>
                             </p>
 
                         ))

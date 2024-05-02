@@ -8,7 +8,7 @@ let houses = [
     src: "casa-rajoy.jpg"
   },
   {
-    name: "house of the bay",
+    name: "House of the bay",
     src: "casa-pedro.jpg"
   },
   {
