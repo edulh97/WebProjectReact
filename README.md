@@ -27,12 +27,16 @@ I have to say, my project is based on another one I saw here: https://www.figma.
 ## About The Project
 This is a school project of the 1st course of multiplatform application development. The objective of this first delivery is the layout, that is to say, to start a project with React and create components to later assemble a web page that in this case is based on a website of modern houses.
 In this example page you can see how is the "skeleton" of the project and in essence how React works. Although we see different pages with similar content, all of them are created from components that can be reused!
-Another great advantage of React is to use third party components, in this project you can see a Leaflet map and icons from Font Awesome. 
+Another great advantage of React is to use third party components, in this project you can see a Leaflet map and icons from Font Awesome.
+
+In the second installment we have already added more content to the skeleton of the first installment that you have in one of the branches. We can see a side menu by clicking on the name of the company. 
+We can also see the delivery with Firebase, getting data from a JSON array. It should be noted that for it to work you have to put the exact name of the house, you could improve the omission of upper and lower case.
 
 ### Built With
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+
 * Visual Studio Code
 * React
+* Node
 * CSS
 * JavaScript
 
@@ -45,7 +49,6 @@ X: https://twitter.com/LhEdu
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 * My partner and great friend, Cristian.
 * My teacher, Tiburcio Cruz Ravelo.
 * Leaflet.
