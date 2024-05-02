@@ -9,6 +9,11 @@ const Header = () => {
   const openSidebar = () => {
     setIsOpen(true)
   }
+
+  const closeSidebar = () => {
+    setIsOpen(false)
+  }
+
   return (
     <>
       <div className='header-container'>
@@ -24,7 +29,7 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      <Sidebar isOpen={isOpen} />
+      <Sidebar isOpen={isOpen} closeSidebar={closeSidebar} />
     </>
 
   )
