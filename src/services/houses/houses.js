@@ -1,34 +1,34 @@
 let houses = [
   {
-    name: "Casoplon Coletas",
+    name: "Uttarpara",
     src: "casa-pablo.jpg"
   },
   {
-    name: "Casoplon Rajoy",
+    name: "Twilight",
     src: "casa-rajoy.jpg"
   },
   {
-    name: "Casoplon Perro Sanchez",
+    name: "house of the bay",
     src: "casa-pedro.jpg"
   },
   {
-    name: "Casoplon Muy caro",
+    name: "Villa del rey Felipe IV",
     src: "HousePro.jpg"
   },
   {
-    name: "Casoplon Super Caro",
+    name: "Wooden house on the coast",
     src: "HousePro2.jpg"
   },
   {
-    name: "Casoplon Mega caro",
+    name: "Velez House",
     src: "HousePro3.jpg"
   },
   {
-    name: "Casoplon Ultra Caro",
+    name: "Villa del conde",
     src: "HousePro4.jpg"
   },
   {
-    name: "Casoplon asequible",
+    name: "Alison Krauss old House",
     src: "HousePro5.jpg"
   }
 ];

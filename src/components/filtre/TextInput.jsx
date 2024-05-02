@@ -14,8 +14,7 @@ function TextInput({ onInputChange }) {
     <input
       value={inputValue}
       onChange={handleChange}
-      placeholder="write a region"
-      className='TextInput-TextField'
+      placeholder="house name"
     />
   );
 }

@@ -1,11 +1,11 @@
-.consult-row{
+.confirmation-row{
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
 }
 
 aside{
-    flex: 50px;
+    flex: 200px;
     padding: 20px;
     
 }
@@ -13,4 +13,8 @@ aside{
 section{
     flex: 50%;
     padding: 20px;
+}
+
+.confirmation-message{
+    padding: 40px;
 }
