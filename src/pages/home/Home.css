@@ -5,8 +5,13 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  border: 1px solid black;
 }
 
 .house-gallery>* {
   flex: 0 0 30vw;
 }
+
+/* .home-house{
+  border: 1px solid black;
+} */

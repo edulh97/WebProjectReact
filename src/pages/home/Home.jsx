@@ -15,7 +15,9 @@ function Home() {
       <Luxury />
       <div className="house-gallery">
         {houses.map((house, index) => (
-          <House key={index} house={house} />
+          <div className="home-house">
+            <House key={index} house={house} />
+          </div>
         ))}
       </div>
       <Footer />

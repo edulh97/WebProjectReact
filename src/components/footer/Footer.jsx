@@ -50,6 +50,7 @@ function Footer() {
             <li><Link to="/AboutUs">About us</Link></li>
             <li><Link to="/Services">Services</Link></li>
             <li><Link to="/Contact">Contact</Link></li>
+            <li><a href="/mirss.xml">RSS</a></li>
             <li><a href="https://www.figma.com/community/file/891374608655348853/website-of-architects-free-website">Inspiration</a></li>
             <li><a href="https://www.google.es/maps/@28.1376429,-15.4305178,3a,75y,146.72h,90t/data=!3m7!1e1!3m5!1sTbqcHBPBsHqymnYNpaX_PQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DTbqcHBPBsHqymnYNpaX_PQ%26cb_client%3Dmaps_sv.tactile.gps%26w%3D203%26h%3D100%26yaw%3D149.93898%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192?coh=205409&entry=ttu">Visitamos</a></li>
           </ul>
