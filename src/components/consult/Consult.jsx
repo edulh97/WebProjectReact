@@ -51,10 +51,11 @@ function Consult() {
           <p>We currently have the following houses in {selectedOption} :</p>
           {
             houses.map((h) => (
-              <p> * {h.name} in the city of {h.city} from {h.country} </p>
+              <div className='consult-houses'>
+              <p>{h.name} in the city of {h.city} from {h.country} </p>
+              </div>
             ))
           }
-
         </section>
       </div>
     </>

@@ -11,7 +11,6 @@ function Home() {
     <>
       <Header />
       <HeaderImage />
-      <Luxury />
       <div className="house-gallery">
         {houses.map((house, index) => (
           <div className="home-house">

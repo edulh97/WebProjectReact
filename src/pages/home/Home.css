@@ -1,90 +1,94 @@
-.house-gallery {
-  gap: 1rem;
-  border: 1px solid rgb(209, 17, 17);
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.home-house{
-  border: 1px solid black;
+/* Estilo para la galería de casas */
+.house-gallery {
   display: flex;
-  padding: 10px;
-} 
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
 
+/* Estilo para cada casa en la galería */
+.home-house {
+  flex: 1 1 45%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
 
-.section{
-  width: 30%;
-  height: 100vh;
-  border: 1px solid rgb(209, 17, 17);
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centra verticalmente el contenido */
+.home-house:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para la sección dentro de cada casa */
+.home-house .section {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Título del proyecto */
+.house-title {
+  font-family: 'Georgia', serif;
+  font-size: 18px;
+  color: #444;
+  margin: 0;
+}
+
+/* Nombre de la casa */
+.house-name {
+  font-family: 'Arial', sans-serif;
+  font-size: 22px;
+  color: #333;
+  margin: 5px 0 0 0;
+}
+
+/* Estilo para el aside dentro de cada casa */
+.home-house .aside {
   text-align: center;
 }
 
-.house-title {
-  color: grey;
-  margin-top: 100px;  
-  font-size: 40px; 
-  margin: 0;
-}
-
-.house-name {
-  color: black;
-  font-size: 50px; 
-  padding-left: 50px;
-  margin: 0;
-}
-
-.aside{
-  width: 70%;
-  height: 100vh;
-  border: 1px solid rgb(209, 17, 17);
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-}
-
+/* Imagen de la casa */
 .house-image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain; 
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Reutilización de estilos previos */
+.consult-houses {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
 
-@media (max-width: 768px) {
-  .home-house {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-color: blueviolet;
-  }
+.consult-houses:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
-  .aside {
-    order: 2;
-    width: 100%; 
-    height: auto; 
-  }
+.consult-houses p {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
 
-  .section {
-    order: 1; 
-    background-color: aqua;
-    width: 100%;
-    height: 1%; 
-    height: 100px;
-  }
-
-
-
-
-
-
-  .house-title {
-    color: grey;
-    font-size: 30px; 
-  }
-  
-  .house-name {
-    color: black;
-    font-size: 40px; 
-  }
-
+.consult-houses p::before {
+  content: '🏡 ';
+  font-size: 18px;
 }
