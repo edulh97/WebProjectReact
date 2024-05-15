@@ -3,17 +3,19 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+  border-radius: 5px;
 }
 
 .container {
   display: flex;
   width: 100vw;
   height: 20vh;
+
 }
 
 .izquierda {
-  flex: 1;
-  background-color: brown;
+flex: 1;
+
 }
 
 .derecha {

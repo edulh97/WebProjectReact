@@ -100,3 +100,29 @@
     font-size: 18px; /* Tamaño del icono */
   }
   
+  .consult-houses {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .consult-houses:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .consult-houses p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  .consult-houses p::before {
+    content: '🏡 ';
+    font-size: 18px;
+  }

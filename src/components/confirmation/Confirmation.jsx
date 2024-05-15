@@ -59,12 +59,6 @@ function Confirmation() {
                     }
                 </section>
             </div>
-            <div className="confirmation-message">
-                <h4>If you are interested in this house, please send us your email so we can get in touch with you.</h4>
-                <TextInputMessage />
-                <PopupMessage />
-            </div>
-
 
         </>
     );
