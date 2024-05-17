@@ -48,14 +48,26 @@ function SeeCommunityHouses() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const { name, city, country, price, continent } = formData;
-    housesService.addHouse(name, country, city, continent, price)
-      .then(() => {
-        getAllcomunityHouse();
-        setFormData({ name: '', city: '', country: '', price: '', continent: '' });
-      })
-      .catch((error) => {
-        console.error("Error adding house: ", error);
-      });
+    if (editingHouse) {
+      housesService.updateHouse(editingHouse, name, price)
+        .then(() => {
+          getAllcomunityHouse();
+          setFormData({ name: '', city: '', country: '', price: '', continent: '' });
+          setEditingHouse(null);
+        })
+        .catch((error) => {
+          console.error("Error updating house: ", error);
+        });
+    } else {
+      housesService.addHouse(name, country, city, continent, price)
+        .then(() => {
+          getAllcomunityHouse();
+          setFormData({ name: '', city: '', country: '', price: '', continent: '' });
+        })
+        .catch((error) => {
+          console.error("Error adding house: ", error);
+        });
+    }
   };
 
   const handleDelete = (idHouse) => {
@@ -68,13 +80,24 @@ function SeeCommunityHouses() {
       });
   };
 
+  const handleEdit = (house) => {
+    setFormData({
+      name: house.name,
+      city: house.city,
+      country: house.country,
+      price: house.price,
+      continent: house.continent
+    });
+    setEditingHouse(house.key);
+  };
+
   return (
     <>
       <div>
         {comunityHouse.map((m) => (
           <div key={m.key} className="SeeCommunityHouses-house">
             <p>{m.name} - {m.price} - {m.city} in {m.country} in {m.continent}</p>
-            <button>Modificar</button>
+            <button onClick={() => handleEdit(m)}>Modificar</button>
             <button onClick={() => handleDelete(m.key)}>Eliminar</button>
           </div>
         ))}
@@ -82,7 +105,7 @@ function SeeCommunityHouses() {
 
       <div>
         <div className="CuestionarioNuevaCasa">
-          <h2>Formulario</h2>
+          <h2>{editingHouse ? "Actualizar Casa" : "Formulario"}</h2>
           <form onSubmit={handleSubmit}>
             <label htmlFor="name">Nombre:</label><br />
             <input type="text" id="name" name="name" value={formData.name} onChange={handleInputChange} /><br /><br />
@@ -99,7 +122,7 @@ function SeeCommunityHouses() {
             <label htmlFor="continent">Continente:</label><br />
             <input type="text" id="continent" name="continent" value={formData.continent} onChange={handleInputChange} /><br /><br />
 
-            <input type="submit" value="Enviar" />
+            <input type="submit" value={editingHouse ? "Actualizar" : "Enviar"} />
           </form>
         </div>
       </div>
