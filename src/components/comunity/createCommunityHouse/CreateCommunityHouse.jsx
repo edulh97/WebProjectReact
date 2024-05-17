@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
-import housesService from "../../services/firebase/houses.service";
+import housesService from "../../../services/firebase/houses.service";
 
-function Comunity() {
-  const [comunityHouse, setcomunityHouse] = useState([]);
+function ReadCommunityHouses() {
   const [formData, setFormData] = useState({
     nombre: "",
     ciudad: "",
@@ -11,28 +10,8 @@ function Comunity() {
     continente: ""
   });
 
-  const getAllcomunityHouse = () => {
-    housesService.getAllcomunityHouse().then((items) => {
-      let auxcomunityHouse = [];
-      items.forEach((item) => {
-        const key = item.key;
-        const data = item.val();
 
-        auxcomunityHouse.push({
-          name: data.name,
-          price: data.price,
-          country: data.country,
-          city: data.city,
-          continent: data.continent
-        })
-      })
-      setcomunityHouse([...auxcomunityHouse]);
-    })
-  }
 
-  useEffect(() => {
-    getAllcomunityHouse();
-  }, [])
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -43,34 +22,12 @@ function Comunity() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { nombre, ciudad, pais, precio, continente } = formData;
-
-    housesService.addHouse(nombre, pais, ciudad, continente, precio).then(() => {
-      getAllcomunityHouse(); // Actualiza la lista de casas después de añadir una nueva
-      setFormData({
-        nombre: "",
-        ciudad: "",
-        pais: "",
-        precio: "",
-        continente: ""
-      }); // Limpia el formulario después de añadir una casa
-    }).catch(error => {
-      console.error("Error adding house: ", error);
-    });
   };
 
 
   return (
     <>
       <div>
-        <div className="test1">
-          {
-            comunityHouse.map((m) => (
-              <p>{m.name} - {m.price} - {m.city} in {m.country} IN IN {m.continent} </p>
-
-            ))
-          }
-        </div>
         <div className="CuestionarioNuevaCasa">
           <h2>Formulario</h2>
           <form onSubmit={handleSubmit}>
@@ -88,7 +45,6 @@ function Comunity() {
 
             <label htmlFor="continente">Continente:</label><br />
             <input type="text" id="continente" name="continente" onChange={handleChange} value={formData.continente} /><br /><br />
-
             <input type="submit" value="Enviar" />
           </form>
         </div>
@@ -97,4 +53,4 @@ function Comunity() {
   )
 }
 
-export default Comunity;
+export default ReadCommunityHouses;

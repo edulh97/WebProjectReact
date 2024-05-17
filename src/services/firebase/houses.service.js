@@ -1,7 +1,7 @@
-import { get, ref, push } from "firebase/database";
+import { get, ref, push, update } from "firebase/database";
 import db from "./firebase.config.js";
 
-const refComunity = ref( db, "/Comunity");
+const refComunity = ref( db, "/Comunity/");
 
 const getAllHouses = (selectedOption) => {
   const refHouse = ref(db, `/Houses/${selectedOption}`);
@@ -12,7 +12,6 @@ const getAllcomunityHouse = () => {
   return get(refComunity)
 }
 
-//Adaptado
 const addHouse = (houseName, country, city, continent, price) => {
   return push(refComunity, {
     name: houseName,
@@ -23,6 +22,19 @@ const addHouse = (houseName, country, city, continent, price) => {
   });
 };
 
+export const updateHouse = (idHouse, name, price) => {
+  const CommunityRef = ref(db, `/Comunity/${idHouse}`)
+  return update(CommunityRef, {
+    name: name,
+    price: price
+  }).then(() => {
+    console.log("Casa actualizada correctamente");
+  })
+  .catch(error => {
+    console.error("Error al actualizar la casa:", error);
+  });
+}
+
 //-------------- del profe
 
 // const deleteProduct = (idProducto) => {
@@ -30,16 +42,11 @@ const addHouse = (houseName, country, city, continent, price) => {
 //   return remove(productRef);
 // }
 
-// const updateProduct = (idProducto, name, price) => {
-//   const productRef = ref(db, `/products/${idproducto}`)
-//   return update(productRef, {
-//     name: name,
-//     price: price
-//   })
-// }
+
 
 export default {
   getAllHouses,
   getAllcomunityHouse,
   addHouse,
+  updateHouse,
 }

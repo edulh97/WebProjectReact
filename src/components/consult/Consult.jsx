@@ -14,6 +14,7 @@ function Consult() {
         const data = item.val();
 
         auxHouses.push({
+          key: key,
           name: data.name,
           country: data.country,
           city: data.city
@@ -51,8 +52,8 @@ function Consult() {
           <p>We currently have the following houses in {selectedOption} :</p>
           {
             houses.map((h) => (
-              <div className='consult-houses'>
-              <p>{h.name} in the city of {h.city} from {h.country} </p>
+              <div key={h.key} className='consult-houses'>
+              <p> {h.key}  {h.name} in the city of {h.city} from {h.country} </p>
               </div>
             ))
           }
