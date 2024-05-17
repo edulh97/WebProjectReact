@@ -17,7 +17,6 @@ function Contact() {
         <Confirmation />
       </div>
       <ReadCommunityHouses />
-
       <Footer />
 
     </>

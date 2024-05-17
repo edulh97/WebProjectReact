@@ -1,4 +1,4 @@
-import { get, ref, push, update } from "firebase/database";
+import { get, ref, push, update, remove } from "firebase/database";
 import db from "./firebase.config.js";
 
 const refComunity = ref( db, "/Comunity/");
@@ -35,12 +35,10 @@ export const updateHouse = (idHouse, name, price) => {
   });
 }
 
-//-------------- del profe
-
-// const deleteProduct = (idProducto) => {
-//   const productRef = ref(db, `/products/${idproducto}`)
-//   return remove(productRef);
-// }
+const deleteHouse = (idHouse) => {
+  const CommunityRef = ref(db, `/Comunity/${idHouse}`)
+  return remove(CommunityRef);
+}
 
 
 
@@ -49,4 +47,5 @@ export default {
   getAllcomunityHouse,
   addHouse,
   updateHouse,
+  deleteHouse
 }
