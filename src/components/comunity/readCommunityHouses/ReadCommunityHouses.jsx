@@ -49,10 +49,10 @@ function SeeCommunityHouses() {
     e.preventDefault();
     const { name, city, country, price, continent } = formData;
     if (editingHouse) {
-      housesService.updateHouse(editingHouse, name, price)
-        .then(() => {
+      housesService.updateHouse(editingHouse, name, price, city, continent, country)
+      .then(() => {
           getAllcomunityHouse();
-          setFormData({ name: '', city: '', country: '', price: '', continent: '' });
+          setFormData({ name: '', city: '', country: '', price: '', continent: '', email: ''});
           setEditingHouse(null);
         })
         .catch((error) => {
@@ -131,6 +131,9 @@ function SeeCommunityHouses() {
 
             <label htmlFor="continent">Continente:</label><br />
             <input type="text" id="continent" name="continent" value={formData.continent} onChange={handleInputChange} /><br /><br />
+
+            <label htmlFor="email">Email:</label><br />
+            <input type="text" id="email" name="email" onChange={handleInputChange} /><br /><br />
 
             <input type="submit" value={editingHouse ? "Actualizar" : "Enviar"} />
           </form>

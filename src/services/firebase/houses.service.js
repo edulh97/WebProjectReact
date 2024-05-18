@@ -22,17 +22,20 @@ const addHouse = (houseName, country, city, continent, price) => {
   });
 };
 
-export const updateHouse = (idHouse, name, price) => {
+ const updateHouse = async (idHouse, name, price, city, continent, country) => {
   const CommunityRef = ref(db, `/Comunity/${idHouse}`)
-  return update(CommunityRef, {
-    name: name,
-    price: price
-  }).then(() => {
-    console.log("Casa actualizada correctamente");
-  })
-  .catch(error => {
-    console.error("Error al actualizar la casa:", error);
-  });
+  try {
+     await update(CommunityRef, {
+       name: name,
+       price: price,
+       city: city,
+       country: country,
+       continent: continent
+     });
+     console.log("Casa actualizada correctamente");
+   } catch (error) {
+     console.error("Error al actualizar la casa:", error);
+   }
 }
 
 const deleteHouse = (idHouse) => {
