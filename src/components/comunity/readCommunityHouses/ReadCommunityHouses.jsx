@@ -71,24 +71,34 @@ function SeeCommunityHouses() {
   };
 
   const handleDelete = (idHouse) => {
-    housesService.deleteHouse(idHouse)
-      .then(() => {
-        getAllcomunityHouse();
-      })
-      .catch((error) => {
-        console.error("Error deleting house: ", error);
-      });
+    const inputName = window.prompt("Por favor, escribe tu nombre para confirmar la eliminación:");
+    if (inputName) {
+      housesService.deleteHouse(idHouse)
+        .then(() => {
+          getAllcomunityHouse();
+        })
+        .catch((error) => {
+          console.error("Error deleting house: ", error);
+        });
+    } else {
+      alert("El nombre introducido no es válido. La casa no será eliminada.");
+    }
   };
 
   const handleEdit = (house) => {
-    setFormData({
-      name: house.name,
-      city: house.city,
-      country: house.country,
-      price: house.price,
-      continent: house.continent
-    });
-    setEditingHouse(house.key);
+    const inputName = window.prompt("Por favor, escribe tu nombre para confirmar la modificación:");
+    if (inputName) {
+      setFormData({
+        name: house.name,
+        city: house.city,
+        country: house.country,
+        price: house.price,
+        continent: house.continent
+      });
+      setEditingHouse(house.key);
+    } else {
+      alert("El nombre introducido no es válido. No se puede modificar la casa.");
+    }
   };
 
   return (

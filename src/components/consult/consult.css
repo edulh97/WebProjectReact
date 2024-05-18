@@ -1,128 +1,138 @@
+/* Estilo general para contenedores */
 .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Estilo para filas de consulta */
-  .consult-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  
-  /* Mensaje de consulta */
-  .consult-message {
-    flex: 1 1 60%;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    padding: 20px;
-  }
-  
-  /* Estilo para los títulos */
-  h2 {
-    font-family: 'Georgia', serif;
-    color: #444;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  /* Estilo para párrafos dentro de consult-message */
-  .consult-message p {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  /* Estilo para el aside */
-  aside {
-    flex: 1 1 30%;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Estilo para el select */
-  select {
-    width: 80%;
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  /* Estilo para la sección */
-  section {
-    flex: 1 1 100%;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    padding: 20px;
-  }
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+/* Estilo para filas de consulta */
+.consult-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Mensaje de consulta */
+.consult-message {
+  flex: 1 1 60%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+}
+
+/* Estilo para los títulos */
+h2 {
+  font-family: 'Georgia', serif;
+  color: #444;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo para párrafos dentro de consult-message */
+.consult-message p {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Estilo para el aside */
+aside {
+  flex: 1 1 30%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilo para el select */
+select {
+  width: 80%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Estilo para la sección */
+section {
+  flex: 1 1 100%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+}
+
+/* Consult Houses */
 .consult-houses {
-    width: 60%;
-    background: #fff; /* Fondo blanco para un look limpio */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto de elevación */
-    margin: 20px; /* Espacio entre tarjetas */
-    padding: 20px; /* Espaciado interno */
-    transition: transform 0.2s, box-shadow 0.2s; /* Transición suave para efectos hover */
-  }
-  
-  .consult-houses:hover {
-    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el ratón */
-  }
-  
-  .consult-houses p {
-    font-family: 'Arial', sans-serif; /* Fuente sencilla y profesional */
-    font-size: 16px; /* Tamaño de fuente adecuado para lectura */
-    color: #333; /* Color de texto */
-    line-height: 1.6; /* Espaciado entre líneas */
-    margin: 0; /* Sin márgenes adicionales */
-  }
-  
-  .consult-houses p::before {
-    content: '🏡 '; /* Icono de casa antes del texto */
-    font-size: 18px; /* Tamaño del icono */
-  }
-  
-  .consult-houses {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    padding: 20px;
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  
-  .consult-houses:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .consult-houses p {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-  }
-  
-  .consult-houses p::before {
-    content: '🏡 ';
-    font-size: 18px;
-  }
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.consult-houses:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.274);
+}
+
+.consult-houses p {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.consult-houses p::before {
+  content: '🏡 ';
+  font-size: 18px;
+}
+
+.SeeCommunityHouses-house:hover {
+  background: #ffffff;
+  box-shadow: 0 6px 14px rgba(255, 161, 176, 0.5); /* Cambiar el color de la sombra al pasar el ratón */
+}
+
+/* Resto de estilos sin cambios */
+.CommunityHouses-container {
+  flex: 1 1 100%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+}
+
+.SeeCommunityHouses-house {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+}
+
+.SeeCommunityHouses-house p {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.SeeCommunityHouses-house p::before {
+  content: '🛠️🏚️ ';
+  font-size: 18px;
+}
