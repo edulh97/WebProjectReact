@@ -6,21 +6,20 @@
   background: #333;
   color: #fff;
   padding: 20px;
-  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px 0;
 }
 
-/* Estilo para la suscripción */
 .footer-subscription {
   text-align: center;
   margin-bottom: 20px;
 }
 
 .footer-subscription h3 {
-  font-family: 'Georgia', serif;
-  color: #ff69b4;
-  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #f8a8d0;
+  margin-bottom: 20px;
+  font-size: 15px;
 }
 
 .subscription-form {
@@ -30,7 +29,6 @@
 
 .subscription-form input[type="email"] {
   padding: 10px;
-  font-size: 16px;
   border-radius: 5px 0 0 5px;
   border: 1px solid #ccc;
   outline: none;
@@ -38,14 +36,14 @@
 }
 
 .subscription-form button {
-  padding: 10px;
-  font-size: 16px;
+  padding: 9px;
+  font-size: 15px;
   border-radius: 0 5px 5px 0;
   border: none;
   background-color: #ff69b4;
   color: #fff;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.69s;
 }
 
 .subscription-form button:hover {
@@ -59,26 +57,28 @@
 }
 
 .footer-menu {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 0;
+  list-style: none;
 }
 
 .footer-menu li {
-  display: inline;
-  margin: 0 10px;
+  margin: 5px;
+  flex: 1 1 auto; /* Allow items to grow and shrink */
 }
 
 .footer-menu a {
-  color: #fff;
+  color: white;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.69s;
 }
 
 .footer-menu a:hover {
   color: #ff69b4;
 }
 
-/* Estilo para los íconos de redes sociales */
 .footer-social {
   display: flex;
   justify-content: center;
@@ -86,20 +86,20 @@
 }
 
 .footer-icons {
-  font-size: 24px;
-  margin: 0 10px;
-  transition: color 0.3s;
+  color: white;
+  font-size: 33px;
+  margin: 15px;
+  transition: color 0.69s;
 }
 
 .footer-icons:hover {
   color: #ff69b4;
 }
 
-/* Estilo para los derechos reservados */
 .footer-rights {
   text-align: center;
-  font-size: 14px;
-  color: #ccc;
+  font-size: 12px;
+  color: #cccccca8;
 }
 
 .footer-rights a {
@@ -109,4 +109,35 @@
 
 .footer-rights a:hover {
   text-decoration: underline;
+}
+
+.footer-map {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.visit-us-message {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* Media queries to adjust navigation items stacking */
+@media (max-width: 1024px) {
+  .footer-menu li {
+    flex: 1 1 30%; /* Adjust to 3 columns */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-menu li {
+    flex: 1 1 45%; /* Adjust to 2 columns */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-menu li {
+    flex: 1 1 100%; /* Stack items vertically on smaller screens */
+  }
 }
