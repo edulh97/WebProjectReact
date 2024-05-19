@@ -11,11 +11,7 @@ function Services() {
       <div className="consult-container">
         <Header />
         <Consult />
-        <div className="consult-prefooter">
-        </div>
-        <div className="consult-footer">
-          <Footer />
-        </div>
+        <Footer />
       </div>
     </>
   );

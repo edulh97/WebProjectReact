@@ -19,7 +19,7 @@ function CommunityHouses() {
             price: data.price,
             country: data.country,
             city: data.city,
-            continent: data.continent
+            SqFt: data.SqFt
           });
         });
         setcomunityHouse([...auxcomunityHouse]);
@@ -35,7 +35,7 @@ function CommunityHouses() {
         <div className="communityHouses-container">
           {comunityHouse.map((m) => (
             <div key={m.key} className="SeeCommunityHouses-house">
-              <p>{m.name} - {m.price} - {m.city} in {m.country} in {m.continent}</p>
+              <p>{m.name} has published a house in {m.city}, {m.country} with {m.SqFt} SqFt.</p>
             </div>
           ))}
         </div>

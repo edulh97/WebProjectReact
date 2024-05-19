@@ -1,20 +1,41 @@
-.confirmation-row{
+/* Estilos para la fila de confirmación */
+.confirmation-row {
     display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-aside{
-    flex: 200px;
-    padding: 20px;
-    
+.confirmation-row aside {
+    margin-top: 20px;
 }
 
-section{
-    flex: 50%;
-    padding: 20px;
+.confirmation-row aside h3 {
+    font-size: 33px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.confirmation-message{
-    padding: 40px;
+.confirmation-row aside,
+.confirmation-row section {
+    width: 50%;
+    /* Ajuste del ancho para que ocupen toda la fila */
+    margin-bottom: 20px;
+    /* Espacio entre los elementos */
+}
+
+/* Estilos para la información de la casa */
+.house-info {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.house-info p {
+    margin: 5px 0;
+}
+
+.house-info strong {
+    font-weight: bold;
 }

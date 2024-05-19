@@ -1,4 +1,3 @@
-import CreateCommunityHouse from "../../components/comunity/createCommunityHouse/CreateCommunityHouse";
 import ReadCommunityHouses from "../../components/comunity/readCommunityHouses/ReadCommunityHouses";
 import Confirmation from "../../components/confirmation/Confirmation";
 import Footer from "../../components/footer/Footer";
@@ -10,14 +9,11 @@ function Contact() {
 
   return (
     <>
-      <div className="contact-style">
-        <Header />
-        <HeaderImage />
-        <Confirmation />
-      </div>
+      <Header />
+      <HeaderImage />
+      <Confirmation />
       <ReadCommunityHouses />
       <Footer />
-
     </>
   );
 

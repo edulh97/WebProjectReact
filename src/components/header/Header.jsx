@@ -22,7 +22,7 @@ const Header = () => {
         </div>
         <div className="header-list">
           <ul className="header-nav-menu">
-            <li><Link to="/Home">Inicio</Link></li>
+            <li><Link to="/Home">Home</Link></li>
             <li><Link to="/AboutUs">About us</Link></li>
             <li><Link to="/Consult">Consult</Link></li>
             <li><Link to="/Contact">Contact</Link></li>

@@ -12,25 +12,23 @@ const getAllcomunityHouse = () => {
   return get(refComunity)
 }
 
-const addHouse = (houseName, country, city, continent, price) => {
+const addHouse = (houseName, country, city, SqFt) => {
   return push(refComunity, {
     name: houseName,
     country: country,
     city: city,
-    continent: continent,
-    price: price
+    SqFt: SqFt
   });
 };
 
- const updateHouse = async (idHouse, name, price, city, continent, country) => {
+ const updateHouse = async (idHouse, name, city, SqFt, country) => {
   const CommunityRef = ref(db, `/Comunity/${idHouse}`)
   try {
      await update(CommunityRef, {
        name: name,
-       price: price,
        city: city,
        country: country,
-       continent: continent
+       SqFt: SqFt
      });
      console.log("Casa actualizada correctamente");
    } catch (error) {

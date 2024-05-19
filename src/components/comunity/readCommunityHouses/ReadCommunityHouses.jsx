@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
 import housesService from "../../../services/firebase/houses.service";
+import './readCommunityHouses.css';
 
-function SeeCommunityHouses() {
+function ReadCommunityHouses() {
   const [comunityHouse, setcomunityHouse] = useState([]);
   const [formData, setFormData] = useState({
     name: '',
     city: '',
     country: '',
-    price: '',
-    continent: ''
+    SqFt: ''
   });
   const [editingHouse, setEditingHouse] = useState(null);
-  
+
 
   const getAllcomunityHouse = () => {
     housesService.getAllcomunityHouse().then((snapshot) => {
@@ -23,10 +23,9 @@ function SeeCommunityHouses() {
         auxcomunityHouse.push({
           key: key,
           name: data.name,
-          price: data.price,
           country: data.country,
           city: data.city,
-          continent: data.continent
+          SqFt: data.SqFt
         });
       });
       setcomunityHouse([...auxcomunityHouse]);
@@ -47,22 +46,22 @@ function SeeCommunityHouses() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { name, city, country, price, continent } = formData;
+    const { name, city, country, SqFt } = formData;
     if (editingHouse) {
-      housesService.updateHouse(editingHouse, name, price, city, continent, country)
-      .then(() => {
+      housesService.updateHouse(editingHouse, name, city, SqFt, country)
+        .then(() => {
           getAllcomunityHouse();
-          setFormData({ name: '', city: '', country: '', price: '', continent: '', email: ''});
+          setFormData({ name: '', city: '', country: '', SqFt: '', email: '' });
           setEditingHouse(null);
         })
         .catch((error) => {
           console.error("Error updating house: ", error);
         });
     } else {
-      housesService.addHouse(name, country, city, continent, price)
+      housesService.addHouse(name, country, city, SqFt)
         .then(() => {
           getAllcomunityHouse();
-          setFormData({ name: '', city: '', country: '', price: '', continent: '' });
+          setFormData({ name: '', city: '', country: '', SqFt: '' });
         })
         .catch((error) => {
           console.error("Error adding house: ", error);
@@ -71,7 +70,7 @@ function SeeCommunityHouses() {
   };
 
   const handleDelete = (idHouse) => {
-    const inputName = window.prompt("Por favor, escribe tu nombre para confirmar la eliminación:");
+    const inputName = window.prompt("Please enter the key that we have sent to your email when you enter your home (write anything, it is an example)");
     if (inputName) {
       housesService.deleteHouse(idHouse)
         .then(() => {
@@ -81,65 +80,66 @@ function SeeCommunityHouses() {
           console.error("Error deleting house: ", error);
         });
     } else {
-      alert("El nombre introducido no es válido. La casa no será eliminada.");
+      alert("You cannot leave this field blank");
     }
   };
 
   const handleEdit = (house) => {
-    const inputName = window.prompt("Por favor, escribe tu nombre para confirmar la modificación:");
+    const inputName = window.prompt("please enter the key that we have sent to your email when you enter your home (write anything, it is an example)");
     if (inputName) {
       setFormData({
         name: house.name,
         city: house.city,
         country: house.country,
-        price: house.price,
-        continent: house.continent
+        SqFt: house.SqFt
       });
       setEditingHouse(house.key);
     } else {
-      alert("El nombre introducido no es válido. No se puede modificar la casa.");
+      alert("You cannot leave this field blank");
     }
   };
 
   return (
     <>
-      <div>
+      {/* Comunidad de casas */}
+      <div className="communityHouses-container">
         {comunityHouse.map((m) => (
-          <div key={m.key} className="SeeCommunityHouses-house">
-            <p>{m.name} - {m.price} - {m.city} in {m.country} in {m.continent}</p>
-            <button onClick={() => handleEdit(m)}>Modificar</button>
-            <button onClick={() => handleDelete(m.key)}>Eliminar</button>
+          <div key={m.key} className="ReadCommunityHouses-house">
+            <p>{m.name} has published a house in {m.city}, {m.country} with {m.SqFt} SqFt.</p>
+            <button onClick={() => handleEdit(m)}>Update</button>
+            <button onClick={() => handleDelete(m.key)}>Delete</button>
           </div>
         ))}
       </div>
 
-      <div>
-        <div className="CuestionarioNuevaCasa">
-          <h2>{editingHouse ? "Actualizar Casa" : "Formulario"}</h2>
+      {/* Formulario de venta de casa */}
+      <div className="house-form-container">
+        <div className="SalesForm">
+          <h2>{editingHouse ? "Update house" : "Sales form"}</h2>
           <form onSubmit={handleSubmit}>
-            <label htmlFor="name">Nombre:</label><br />
+            <label htmlFor="name">Your name:</label><br />
             <input type="text" id="name" name="name" value={formData.name} onChange={handleInputChange} /><br /><br />
-
-            <label htmlFor="city">Ciudad:</label><br />
-            <input type="text" id="city" name="city" value={formData.city} onChange={handleInputChange} /><br /><br />
-
-            <label htmlFor="country">País:</label><br />
-            <input type="text" id="country" name="country" value={formData.country} onChange={handleInputChange} /><br /><br />
-
-            <label htmlFor="price">Precio:</label><br />
-            <input type="text" id="price" name="price" value={formData.price} onChange={handleInputChange} /><br /><br />
-
-            <label htmlFor="continent">Continente:</label><br />
-            <input type="text" id="continent" name="continent" value={formData.continent} onChange={handleInputChange} /><br /><br />
 
             <label htmlFor="email">Email:</label><br />
             <input type="text" id="email" name="email" onChange={handleInputChange} /><br /><br />
 
-            <input type="submit" value={editingHouse ? "Actualizar" : "Enviar"} />
+            <h2>House information</h2>
+
+            <label htmlFor="city">City:</label><br />
+            <input type="text" id="city" name="city" value={formData.city} onChange={handleInputChange} /><br /><br />
+
+            <label htmlFor="country">Country:</label><br />
+            <input type="text" id="country" name="country" value={formData.country} onChange={handleInputChange} /><br /><br />
+
+            <label htmlFor="SqFt">Square feet:</label><br />
+            <input type="text" id="SqFt" name="SqFt" value={formData.SqFt} onChange={handleInputChange} /><br /><br />
+
+            <input type="submit" value={editingHouse ? "Update house" : "Sales form"} />
           </form>
         </div>
       </div>
+
     </>
   );
 }
-export default SeeCommunityHouses;
+export default ReadCommunityHouses;

@@ -4,7 +4,6 @@ import HeaderImage from "../../components/header-image/HeaderImage";
 import Header from "../../components/header/Header";
 import houses from "../../services/houses/houses.js";
 import './Home.css';
-import Luxury from '../../components/luxury/Luxury.jsx';
 
 function Home() {
   return (

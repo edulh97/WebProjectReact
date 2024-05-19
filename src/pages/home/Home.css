@@ -12,7 +12,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 20px;
+  padding: 40px;
 }
 
 /* Estilo para cada casa en la galería */
@@ -62,7 +62,7 @@
 .house-image {
   max-width: 100%;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 14px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Reutilización de estilos previos */

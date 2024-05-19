@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import { Icon } from 'leaflet';
 import markerIcon from "../../images/marker-icon.png";
+import "leaflet/dist/leaflet.css";
 
 
 function Footer() {
@@ -28,16 +29,16 @@ function Footer() {
     <>
       <div className="footer-container">
         <div className="footer-subscription">
-          <h3>Recibe promociones, ventas privadas y novedades</h3>
+          <h3>Get promotions, private sales and news</h3>
           <form className="subscription-form">
-            <input type="email" placeholder="Tu correo electrónico" />
-            <button type="submit">Suscribirme</button>
+            <input type="email" placeholder="Your email" />
+            <button type="submit">Subscribe</button>
           </form>
         </div>
 
         <div className="footer-navigation">
           <ul className="footer-menu">
-            <li><Link to="/Home">Inicio</Link></li>
+            <li><Link to="/Home">Home</Link></li>
             <li><Link to="/AboutUs">About us</Link></li>
             <li><Link to="/Services">Services</Link></li>
             <li><Link to="/Contact">Contact</Link></li>
@@ -46,7 +47,7 @@ function Footer() {
           </ul>
         </div>
 
-        <div className="footer-map">
+        <div className='footer-map-container'>
           <p className="visit-us-message">Visit us:</p>
           <MapContainer center={[27.9944, -15.4192]} zoom={13} scrollWheelZoom={false} style={{ height: '200px', width: '300px' }}>
             <TileLayer
@@ -73,14 +74,10 @@ function Footer() {
             <FontAwesomeIcon icon={faGithub} className="footer-icons" />
           </a>
         </div>
-
         <div className="footer-rights">
-          <p>𒌐 2024 TecnoCan. Todos los derechos reservados <a href="https://shoprenderview.aliexpress.com/credential/showcredential.htm?storeNum=5379102&spm=a2g0o.store_pc_promotion.pcShopHead_442856424.0">Política de Privacidad y Cookies</a> | <a href="https://shoprenderview.aliexpress.com/credential/showcredential.htm?storeNum=5379102&spm=a2g0o.store_pc_promotion.pcShopHead_442856424.0">Condiciones de Venta</a></p>
+          <p>𒌐 2024 GutsProduction. Todos los derechos reservados <a href="https://shoprenderview.aliexpress.com/credential/showcredential.htm?storeNum=5379102&spm=a2g0o.store_pc_promotion.pcShopHead_442856424.0">Política de Privacidad y Cookies</a> | <a href="https://shoprenderview.aliexpress.com/credential/showcredential.htm?storeNum=5379102&spm=a2g0o.store_pc_promotion.pcShopHead_442856424.0">Condiciones de Venta</a></p>
         </div>
       </div>
-
-
-
     </>
   )
 }
