@@ -1,7 +1,7 @@
 # React-Project1
 In this second release we have implemented improvements such as: responsive side menu, and connect to a firebase database that allows us to obtain data.In addition, the appearance and response have been improved.
 
-The firebase implementation can be viewed on the Consult and Contact pages. 
+The firebase implementation can be viewed on the Consult and Contact pages.
 On the Consult page you can see that it returns data according to the selected region and on the Contact page you can see the price by typing the name of the house.
 
 I have to say, my project is based on another one I saw here: https://www.figma.com/community/file/891374608655348853/website-of-architects-free-website
