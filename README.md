@@ -25,7 +25,7 @@ I have to say, my project is based on another one I saw here: https://www.figma.
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-In the Queries section you can see the finished projects destined to be sold, and if you want to know their details you must write the name in Contact.
+In the Consult section you can see the finished projects destined to be sold, and if you want to know their details you must write the name in Contact.
 
 A new section of houses of the community is added where people can add the house they want to sell so that people can see its location and size.
 
@@ -37,6 +37,7 @@ In the Contact section, if a login system is implemented you will be able to see
 * React
 * CSS
 * JavaScript
+* Firebase
 
 <!-- CONTACT -->
 ## Contact
@@ -51,6 +52,7 @@ Use this space to list resources you find helpful and would like to give credit 
 * My partner and great friend, Cristian.
 * My teacher, Tiburcio Cruz Ravelo.
 * Leaflet.
+* Firebase.
 * Font Awesome.
 * Online discloser, Miguel Ángel Durán (midudev)
 * tutorials that have helped me :
