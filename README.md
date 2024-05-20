@@ -35,6 +35,7 @@ In the Contact section, if a login system is implemented you will be able to see
 
 * Visual Studio Code
 * React
+* Node
 * CSS
 * JavaScript
 * Firebase
@@ -48,7 +49,6 @@ X: https://twitter.com/LhEdu
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 * My partner and great friend, Cristian.
 * My teacher, Tiburcio Cruz Ravelo.
 * Leaflet.
