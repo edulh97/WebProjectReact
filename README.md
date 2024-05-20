@@ -1,10 +1,10 @@
-# React-Project1
-In this second release we have implemented improvements such as: responsive side menu, and connect to a firebase database that allows us to obtain data.In addition, the appearance and response have been improved. 
+# React-Project
+In this third and last installment we improve the content and appearance, add typical CRUD functions, implement firebase hosting services and work on the RSS of this project.
 
-The firebase implementation can be viewed on the Consult and Contact pages. 
-On the Consult page you can see that it returns data according to the selected region and on the Contact page you can see the price by typing the name of the house.
+Hosting URL: https://house-3b564.web.app/Home 
 
-We are also working on the use of GitHub, creation and modification of branches!
+![VerficacionFEEDLY](/public/capturaConfirmacion.png)
+![VerficacionFEEDLY2](/public/confirmacion2.png.png)
 
 I have to say, my project is based on another one I saw here: https://www.figma.com/community/file/891374608655348853/website-of-architects-free-website
 
@@ -25,12 +25,14 @@ I have to say, my project is based on another one I saw here: https://www.figma.
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-This is a school project of the 1st course of multiplatform application development. The objective of this first delivery is the layout, that is to say, to start a project with React and create components to later assemble a web page that in this case is based on a website of modern houses.
-In this example page you can see how is the "skeleton" of the project and in essence how React works. Although we see different pages with similar content, all of them are created from components that can be reused!
-Another great advantage of React is to use third party components, in this project you can see a Leaflet map and icons from Font Awesome. 
+In the Queries section you can see the finished projects destined to be sold, and if you want to know their details you must write the name in Contact.
+
+A new section of houses of the community is added where people can add the house they want to sell so that people can see its location and size.
+
+In the Contact section, if a login system is implemented you will be able to see your selling requests, and the questionnaire to add them which includes a method to modify and delete. 
 
 ### Built With
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+
 * Visual Studio Code
 * React
 * CSS

@@ -1,6 +1,6 @@
-/* Estilos para la comunidad de casas */
-.communityHouses-container {
-  margin-bottom: 20px;
+.ReadCommunityHouses-house {
+  border: 1px solid #ccc; /* Opcional: añade un borde para visualización */
+  padding: 10px; /* Opcional: añade relleno interno */
 }
 
 .ReadCommunityHouses-house {
@@ -11,12 +11,21 @@
   margin-bottom: 10px;
 }
 
+.communityHouses-container {
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
 .ReadCommunityHouses-house p {
   margin: 5px 0;
 }
 
 .ReadCommunityHouses-house button {
-  background-color: #007bff;
+  background-color: #256ab4;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -29,7 +38,6 @@
   background-color: #0056b3;
 }
 
-/* Estilos para el formulario de venta de casa */
 .house-form-container {
   margin-bottom: 20px;
 }
@@ -39,12 +47,13 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 20px;
+  text-align: center;
 }
 
 .SalesForm h2 {
   color: #333;
   font-size: 20px;
-  margin-bottom: 10px;
+  text-align: center;
 }
 
 .SalesForm label {
@@ -57,6 +66,7 @@
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  max-width: 50vw;
 }
 
 .SalesForm input[type="submit"] {

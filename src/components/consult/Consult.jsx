@@ -55,7 +55,7 @@ function Consult() {
           {
             houses.map((h) => (
               <div key={h.key} className='consult-houses'>
-                <p> Project {h.name} in the city of {h.city} from {h.country} </p>
+                <p> Project <strong>{h.name}</strong> in the city of {h.city} from {h.country} </p>
               </div>
             ))
           }

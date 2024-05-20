@@ -2,7 +2,7 @@ import React from "react";
 import classes from './style.module.css'
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faX } from '@fortawesome/free-solid-svg-icons';
+import { faX, faRss } from '@fortawesome/free-solid-svg-icons';
 import { faYoutube, faTwitter, faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = ({ isOpen, closeSidebar }) => {
@@ -18,16 +18,20 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
       <div className="side-social">
         <p>Don't forget to follow us!</p>
         <a href="https://www.youtube.com/watch?v=r7086iAv50Q" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faYoutube} className="footer-icons" />
+          <FontAwesomeIcon icon={faYoutube} className="side-icons" />
         </a>
         <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faTwitter} className="footer-icons" />
+          <FontAwesomeIcon icon={faTwitter} className="side-icons" />
         </a>
         <a href="https://www.facebook.com/?locale=es_ES" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faFacebook} className="footer-icons" />
+          <FontAwesomeIcon icon={faFacebook} className="side-icons" />
         </a>
         <a href="https://github.com/edulh97/React-Project1" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faGithub} className="footer-icons" />
+          <FontAwesomeIcon icon={faGithub} className="side-icons" />
+        </a>
+        <a href="/mirss.xml" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faRss} className="side-icons" />
+
         </a>
       </div>
     </div>

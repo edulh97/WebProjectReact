@@ -18,7 +18,7 @@ const Header = () => {
     <>
       <div className='header-container'>
         <div className="header-logo">
-          <img src="/src/images/WhiteRock.png" alt="logo" onClick={openSidebar} />
+          <img src="/public/WhiteRock.png" alt="logo" onClick={openSidebar} />
         </div>
         <div className="header-list">
           <ul className="header-nav-menu">

@@ -101,8 +101,9 @@ function ReadCommunityHouses() {
 
   return (
     <>
-      {/* Comunidad de casas */}
+      <h1>Your requests</h1>
       <div className="communityHouses-container">
+
         {comunityHouse.map((m) => (
           <div key={m.key} className="ReadCommunityHouses-house">
             <p>{m.name} has published a house in {m.city}, {m.country} with {m.SqFt} SqFt.</p>
@@ -112,7 +113,6 @@ function ReadCommunityHouses() {
         ))}
       </div>
 
-      {/* Formulario de venta de casa */}
       <div className="house-form-container">
         <div className="SalesForm">
           <h2>{editingHouse ? "Update house" : "Sales form"}</h2>

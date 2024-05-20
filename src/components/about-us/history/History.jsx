@@ -30,7 +30,7 @@ const History = () => {
         <h2>Paris. 1927</h2>
       </div>
       <div className={`history-image-container ${revealed ? 'reveal' : ''}`}>
-        <img src="src/images/origin-company.jpg" alt="history" className='history-image' />
+        <img src="/public/origin-company.jpg" alt="history" className='history-image' />
         <p>Against the backdrop of post-war reconstruction, he saw an opportunity to expand his business and contribute to the revitalization of the city. His unique designs and commitment to sustainability made him a prominent name in the Paris art and business scene, proving that creativity can flourish even in times of adversity.</p>
       </div>
     </div>

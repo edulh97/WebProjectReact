@@ -1,4 +1,4 @@
-/* Estilo general para contenedores */
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -8,7 +8,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para filas de consulta */
+
 .consult-row {
   display: flex;
   flex-wrap: wrap;
@@ -16,7 +16,7 @@
   padding: 20px;
 }
 
-/* Mensaje de consulta */
+
 .consult-message {
   flex: 1 1 60%;
   background: #fff;
@@ -26,7 +26,7 @@
   padding: 20px;
 }
 
-/* Estilo para los títulos */
+
 h2 {
   font-family: 'Georgia', serif;
   color: #444;
@@ -34,7 +34,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Estilo para párrafos dentro de consult-message */
+
 .consult-message p {
   font-family: 'Arial', sans-serif;
   font-size: 16px;
@@ -42,7 +42,7 @@ h2 {
   line-height: 1.6;
 }
 
-/* Estilo para el aside */
+
 aside {
   flex: 1 1 30%;
   background: #fff;
@@ -53,7 +53,7 @@ aside {
   text-align: center;
 }
 
-/* Estilo para el select */
+
 select {
   width: 80%;
   padding: 10px;
@@ -63,7 +63,7 @@ select {
   border: 1px solid #ccc;
 }
 
-/* Estilo para la sección */
+
 section {
   flex: 1 1 100%;
   background: #fff;
@@ -73,7 +73,7 @@ section {
   padding: 20px;
 }
 
-/* Consult Houses */
+
 .consult-houses {
   background: #fff;
   border-radius: 10px;
@@ -103,10 +103,10 @@ section {
 
 .SeeCommunityHouses-house:hover {
   background: #ffffff;
-  box-shadow: 0 6px 14px rgba(255, 161, 176, 0.5); /* Cambiar el color de la sombra al pasar el ratón */
+  box-shadow: 0 6px 14px rgba(255, 161, 176, 0.5); 
 }
 
-/* Resto de estilos sin cambios */
+
 .CommunityHouses-container {
   flex: 1 1 100%;
   background: #fff;
@@ -114,6 +114,7 @@ section {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 10px;
   padding: 20px;
+
 }
 
 .SeeCommunityHouses-house {

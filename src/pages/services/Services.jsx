@@ -8,11 +8,9 @@ import './service.css';
 function Services() {
   return (
     <>
-      <div className="consult-container">
         <Header />
         <Consult />
         <Footer />
-      </div>
     </>
   );
 }
