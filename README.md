@@ -4,7 +4,7 @@ In this third and last installment we improve the content and appearance, add ty
 Hosting URL: https://house-3b564.web.app/Home 
 
 ![VerficacionFEEDLY](/public/capturaConfirmacion.png)
-![VerficacionFEEDLY2](/public/confirmacion2.png.png)
+![VerficacionFEEDLY2](/public/confirmacion2.png)
 
 I have to say, my project is based on another one I saw here: https://www.figma.com/community/file/891374608655348853/website-of-architects-free-website
 
