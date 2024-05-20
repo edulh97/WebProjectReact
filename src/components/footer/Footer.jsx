@@ -5,7 +5,7 @@ import { faYoutube, faTwitter, faFacebook, faGithub } from '@fortawesome/free-br
 import { Link } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import { Icon } from 'leaflet';
-import markerIcon from "../../images/marker-icon.png";
+import markerIcon from "../../../public/marker-icon.png";
 import "leaflet/dist/leaflet.css";
 
 

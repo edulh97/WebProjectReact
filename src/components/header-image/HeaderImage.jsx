@@ -5,7 +5,7 @@ function HeaderImage() {
     <>
       <div className="container">
         <div className="izquierda">
-          <img className="HeaderImage" src="/public/founder.jpg" />
+          <img className="HeaderImage" src="founder.jpg" />
         </div>
         <div className="derecha">
           <h1>Quality of work</h1>
