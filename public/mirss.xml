@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0">
+    <channel>
+        <title>Mi RSS</title>
+        <link>https://house-3b564.web.app/Home</link>
+        <description>RSS WEB Eduardo Lopez</description>
+        <language>es-ES</language>
+        <ttl>4</ttl>
+        <item>
+            <title>Home</title>
+            <link>https://house-3b564.web.app/Home</link>
+            <description>House List</description>
+        </item>
+        <item>
+            <title>About Us</title>
+            <link>https://house-3b564.web.app/AboutUs</link>
+            <description>Our History</description>
+        </item>
+        <item>
+            <title>Consult</title>
+            <link>https://house-3b564.web.app/Consult</link>
+            <description>House Consult</description>
+        </item>
+        <item>
+            <title>Contact</title>
+            <link>https://house-3b564.web.app/Contact</link>
+            <description>Contacts</description>
+        </item>
+    </channel>
+</rss>

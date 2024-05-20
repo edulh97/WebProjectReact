@@ -16,11 +16,14 @@ function App() {
           <Route path='/AboutUs' element={<AboutUs />} />
           <Route path='/Contact' element={<Contact />} />
           <Route path='/Consult' element={<Services />} />
+          <Route path='/mirss.xml'/>
           <Route path='/*' element={<Home />} />
         </Routes>
       </BrowserRouter>
     </>
   )
 }
+
+
 
 export default App

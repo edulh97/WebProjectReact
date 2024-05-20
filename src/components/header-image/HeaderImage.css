@@ -3,17 +3,19 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+  border-radius: 5px;
 }
 
 .container {
   display: flex;
   width: 100vw;
   height: 20vh;
+
 }
 
 .izquierda {
-  flex: 1;
-  background-color: brown;
+flex: 1;
+
 }
 
 .derecha {
@@ -23,4 +25,19 @@
   align-content: center;
   width: 50%;
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  .derecha {
+    width: 100%; /* Cambiar el ancho al 100% para que ocupe todo el ancho disponible en dispositivos móviles */
+  }
+
+  .derecha h1 {
+    font-size: 1.5rem; /* Reducir el tamaño de la fuente del encabezado */
+  }
+
+  .derecha p {
+    font-size: 0.8rem; /* Reducir el tamaño de la fuente del párrafo */
+    margin: 0 10px; /* Añadir un margen a los lados del párrafo para evitar que se desborde */
+  }
 }

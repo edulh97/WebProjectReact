@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import db from "../../services/firebase/firebase.config";
 import { get, ref } from "firebase/database";
-import TextInputMessage from "../../components/textInput/TextInputMessage";
-import PopupMessage from "../popup/PopUpMessage";
 import TextInput from "../../components/filtre/TextInput";
 import './confirmation.css';
 
@@ -21,7 +19,10 @@ function Confirmation() {
                         city: houseData.city,
                         country: houseData.country,
                         name: houseData.name,
-                        price: houseData.price
+                        price: houseData.price,
+                        SqFt: houseData.SqFt,
+                        baths: houseData.baths,
+                        beds: houseData.beds
                     });
                 });
             });
@@ -43,29 +44,30 @@ function Confirmation() {
         <>
             <div className="confirmation-row">
                 <aside>
-                    <h3>Enter the name of the house</h3>
+                    <h3>Enter the project</h3>
                     <TextInput onInputChange={handleFilterChange} />
                 </aside>
                 <section>
                     {
                         houses2.map((h, index) => (
-                            <p>
-                                Remember that this house is located in <strong>{h.city}, {h.country}</strong>.
-                                <br />
-                                The initial price is <strong>{h.price} €</strong>
-                            </p>
-
+                            <div className="house-info" key={index}>
+                                <p>
+                                    Remember that this house is located in <strong>{h.city}, {h.country}</strong>.
+                                    <br />
+                                    Square feet: {h.SqFt}
+                                    <br />
+                                    Beds: {h.beds}
+                                    <br />
+                                    Baths: {h.baths}
+                                    <br />
+                                    The initial price is <strong>{h.price} €</strong>
+                                </p>
+                            </div>
                         ))
                     }
+
                 </section>
             </div>
-            <div className="confirmation-message">
-                <h4>If you are interested in this house, please send us your email so we can get in touch with you.</h4>
-                <TextInputMessage />
-                <PopupMessage />
-            </div>
-
-
         </>
     );
 }

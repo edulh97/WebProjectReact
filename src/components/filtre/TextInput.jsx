@@ -13,7 +13,7 @@ function TextInput({ onInputChange }) {
     <input
       value={inputValue}
       onChange={handleChange}
-      placeholder="house name"
+      placeholder="Project name"
     />
   );
 }

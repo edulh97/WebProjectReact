@@ -1,12 +1,68 @@
-.house-gallery {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.house-gallery>* {
-  flex: 0 0 30vw;
+/* Estilo para la galería de casas */
+.house-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
 }
+
+/* Estilo para cada casa en la galería */
+.home-house {
+  flex: 1 1 45%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.home-house:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para la sección dentro de cada casa */
+.home-house .section {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Título del proyecto */
+.house-title {
+ font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  color: #444;
+  margin: 0;
+}
+
+/* Nombre de la casa */
+.house-name {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+  color: #333;
+  margin: 5px 0 0 0;
+}
+
+/* Estilo para el aside dentro de cada casa */
+.home-house .aside {
+  text-align: center;
+}
+
+/* Imagen de la casa */
+.house-image {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 14px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Reutilización de estilos previos */

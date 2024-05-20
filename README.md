@@ -1,8 +1,10 @@
-# React-Project1
-In this second release we have implemented improvements such as: responsive side menu, and connect to a firebase database that allows us to obtain data.In addition, the appearance and response have been improved.
+# React-Project
+In this third and last installment we improve the content and appearance, add typical CRUD functions, implement firebase hosting services and work on the RSS of this project.
 
-The firebase implementation can be viewed on the Consult and Contact pages.
-On the Consult page you can see that it returns data according to the selected region and on the Contact page you can see the price by typing the name of the house.
+Hosting URL: https://house-3b564.web.app/Home 
+
+![VerficacionFEEDLY](/public/capturaConfirmacion.png)
+![VerficacionFEEDLY2](/public/confirmacion2.png)
 
 I have to say, my project is based on another one I saw here: https://www.figma.com/community/file/891374608655348853/website-of-architects-free-website
 
@@ -23,12 +25,11 @@ I have to say, my project is based on another one I saw here: https://www.figma.
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-This is a school project of the 1st course of multiplatform application development. The objective of this first delivery is the layout, that is to say, to start a project with React and create components to later assemble a web page that in this case is based on a website of modern houses.
-In this example page you can see how is the "skeleton" of the project and in essence how React works. Although we see different pages with similar content, all of them are created from components that can be reused!
-Another great advantage of React is to use third party components, in this project you can see a Leaflet map and icons from Font Awesome.
+In the Consult section you can see the finished projects destined to be sold, and if you want to know their details you must write the name in Contact.
 
-In the second installment we have already added more content to the skeleton of the first installment that you have in one of the branches. We can see a side menu by clicking on the name of the company. 
-We can also see the delivery with Firebase, getting data from a JSON array. It should be noted that for it to work you have to put the exact name of the house, you could improve the omission of upper and lower case.
+A new section of houses of the community is added where people can add the house they want to sell so that people can see its location and size.
+
+In the Contact section, if a login system is implemented you will be able to see your selling requests, and the questionnaire to add them which includes a method to modify and delete. 
 
 ### Built With
 
@@ -37,6 +38,7 @@ We can also see the delivery with Firebase, getting data from a JSON array. It s
 * Node
 * CSS
 * JavaScript
+* Firebase
 
 <!-- CONTACT -->
 ## Contact
@@ -50,6 +52,7 @@ X: https://twitter.com/LhEdu
 * My partner and great friend, Cristian.
 * My teacher, Tiburcio Cruz Ravelo.
 * Leaflet.
+* Firebase.
 * Font Awesome.
 * Online discloser, Miguel Ángel Durán (midudev)
 * tutorials that have helped me :

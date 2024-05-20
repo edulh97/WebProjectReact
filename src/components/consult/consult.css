@@ -1,16 +1,139 @@
-.consult-row{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-aside{
-    flex: 50px;
-    padding: 20px;
-    
+
+.consult-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-section{
-    flex: 50%;
-    padding: 20px;
+
+.consult-message {
+  flex: 1 1 60%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+}
+
+
+h2 {
+  font-family: 'Georgia', serif;
+  color: #444;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.consult-message p {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+aside {
+  flex: 1 1 30%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+select {
+  width: 80%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+
+section {
+  flex: 1 1 100%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+}
+
+
+.consult-houses {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.consult-houses:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.274);
+}
+
+.consult-houses p {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.consult-houses p::before {
+  content: '🏡 ';
+  font-size: 18px;
+}
+
+.SeeCommunityHouses-house:hover {
+  background: #ffffff;
+  box-shadow: 0 6px 14px rgba(255, 161, 176, 0.5); 
+}
+
+
+.CommunityHouses-container {
+  flex: 1 1 100%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+
+}
+
+.SeeCommunityHouses-house {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+}
+
+.SeeCommunityHouses-house p {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.SeeCommunityHouses-house p::before {
+  content: '🛠️🏚️ ';
+  font-size: 18px;
 }
